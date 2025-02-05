@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-+rbv74-2(@=-*kuqm7+*km)4_0^47l#@mq8yf06qpr%p1i!!q%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['divithkumar-8.onrender.com', 'www.divithkumar-8.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://divithkumar-8.onrender.com']
+SECURE_SSL_REDIRECT = True
 
 
 # Application definition
@@ -89,10 +91,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-ALLOWED_HOSTS = ['divithkumar-8.onrender.com']
-CSRF_TRUSTED_ORIGINS = ['https://divithkumar-8.onrender.com']
-
 
 
 # Password validation
